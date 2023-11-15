@@ -194,17 +194,25 @@ html{
 }
 .social__icons{
     text-decoration: none;
+    transition: transform 0.5s ease-in;
+}
+.social__icons:hover{
+    transform: scale(1.3);
 }
 .icon-media{
     font-size: 2rem;
     color: var(--text-white);
     transition: color 0.5s ease-in;
 }
+.icon-media:hover{
+    transform: scale(2);
+}
 /* .ri-instagram-line{
     color: var(--text-white);
 } */
 .ri-instagram-line:hover{
     color: #f706b3;
+
 }
 .ri-tiktok-line:hover{
     color: #00d9d3;
@@ -768,11 +776,24 @@ html{
     }
     .hero__section{
         padding: 10px;
+        justify-content: space-evenly;
     } 
     .icon-media{
         font-size: 1.5rem;
     }
     .hero__line{
         display: none;
+    }
+    .hero__img{
+        width: auto;
+        max-width: 360px;
+    }
+    .hero__picture{
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social__container{
+        flex-direction: row;
     }
 }
