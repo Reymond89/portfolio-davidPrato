@@ -719,15 +719,16 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        background: rgba(24,13,45,1);
+        background-color: rgb(255 255 255 / 0.1);
+        backdrop-filter: blur(10px);
         color: var(--text-white);
-        transform: translateY(-110%);
-        transition: 0.8s ease-in;
+        transition: clip-path 0.8s ease-in-out;
+        clip-path: circle(0 at 0 0);
 
     }
     .menu_open{
-        transform: translateY(0);
-        transition: 0.6s ease-in;
+        clip-path: circle(100% at 50% 50%);
+        transition: clip-path 0.6s ease-in;
     }
     .header__button{
         display: none;
@@ -740,7 +741,7 @@ html{
     }
     .header__list li a{
         color: var(--text-white);
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         text-decoration: none;
         font-weight: 700;
         position: relative;
@@ -759,7 +760,7 @@ html{
         overflow: hidden;
     }
     .header__list li:hover a{
-        font-size: 3rem;
+        font-size: 2.4rem;
         animation: revealText 5s ease-in;
     }
     @keyframes revealText {
@@ -851,6 +852,7 @@ html{
         font-size: 2rem;
     }
     .hero__section{
+        width: 98%;
         padding: 10px;
         justify-content: space-evenly;
     } 
