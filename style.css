@@ -312,6 +312,7 @@ html{
 
 ::-webkit-scrollbar{
     width: .60rem;
+    height: .60rem;
     /* border-radius: .5rem; */
     background: rgb(15, 15, 15);
 }
@@ -705,6 +706,14 @@ html{
 }
 
 /* Breakpoins */
+@media screen and ( max-width: 1050px) {
+    .testimonials__title{
+        font-size: 2rem;
+    }
+    .testimonials__card{
+        min-width: 350px;
+    }
+}
 
 @media screen and ( max-width: 900px) {
     .header__list{
@@ -855,6 +864,22 @@ html{
     }
 }
 
+@media screen and ( max-width: 850px) {
+    .testimonials__container{
+        flex-direction: column;
+    }
+    .testimonials__text{
+        width: 80%;
+        align-items: center;
+    }
+    .testimonials__description{
+        text-align: center;
+    }
+    .testimonial__container-cards{
+        width: 80%;
+    }
+}
+
 @media screen and ( max-width: 600px) {
  
 
@@ -911,5 +936,31 @@ html{
     .about__title{
         font-size: 5rem;
         top: 8px;
+    }
+    /* testimonial */
+    .testimonials__container{
+        justify-content: space-evenly;
+    }
+    .testimonials__title{
+        text-align: center;
+    }
+    .testimonials__text{
+        gap: 10px;
+    }
+    .testimonial__container-cards{
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+    }
+    .testimonials__card{
+        padding: 8px 10px;
+        min-width: 275px;
+
+    }
+    .card__description{
+        font-size: 0.9rem;
+    }
+    .testimonials__button{
+        font-size: 1rem;
     }
 }
